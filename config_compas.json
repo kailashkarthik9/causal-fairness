@@ -1,0 +1,21 @@
+{
+  "dataset": "COMPAS",
+  "non_numeric_attributes": [
+    "age_cat",
+    "c_charge_degree"
+  ],
+  "sensitive_attributes": [
+    "race",
+    "sex"
+  ],
+  "numeric_attributes": {
+    "priors_count": [
+      -1,
+      10,
+      40
+    ]
+  },
+  "date_attributes": {},
+  "ground_truth": "is_recid",
+  "predictions": "y_pred"
+}

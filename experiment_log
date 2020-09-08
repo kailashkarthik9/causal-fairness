@@ -1,0 +1,163 @@
+d=0.03
+
+sex _||_ age_cat | []
+sex _||_ age_cat | ['race']
+
+d = 0.035
+sex _||_ age_cat | []
+sex _||_ age_cat | ['race']
+sex _||_ age_cat | ['priors_count']
+sex _||_ age_cat | ['is_recid']
+
+d = 0.04
+sex _||_ age_cat | []
+sex _||_ age_cat | ['race']
+sex _||_ age_cat | ['priors_count']
+sex _||_ age_cat | ['is_recid']
+
+d = 0.045
+sex _||_ age_cat | []
+sex _||_ is_recid | []
+sex _||_ age_cat | ['race']
+sex _||_ age_cat | ['priors_count']
+sex _||_ age_cat | ['is_recid']
+
+d = 0.05
+race _||_ sex | []
+sex _||_ age_cat | []
+sex _||_ is_recid | []
+sex _||_ age_cat | ['race']
+sex _||_ age_cat | ['priors_count']
+sex _||_ age_cat | ['is_recid']
+
+d=0.07:
+race _||_ sex | []
+sex _||_ age_cat | []
+sex _||_ is_recid | []
+age_cat _||_ is_recid | []
+sex _||_ age_cat | ['race']
+sex _||_ is_recid | ['race']
+age_cat _||_ is_recid | ['sex']
+sex _||_ age_cat | ['priors_count']
+sex _||_ age_cat | ['is_recid']
+sex _||_ age_cat | ['race', 'is_recid']
+
+
+d=0.1
+race _||_ sex | []
+race _||_ is_recid | []
+sex _||_ age_cat | []
+sex _||_ is_recid | []
+age_cat _||_ is_recid | []
+sex _||_ age_cat | ['race']
+sex _||_ is_recid | ['race']
+age_cat _||_ is_recid | ['race']
+race _||_ is_recid | ['sex']
+age_cat _||_ is_recid | ['sex']
+race _||_ sex | ['age_cat']
+sex _||_ is_recid | ['age_cat']
+race _||_ is_recid | ['priors_count']
+sex _||_ age_cat | ['priors_count']
+sex _||_ is_recid | ['priors_count']
+race _||_ sex | ['is_recid']
+sex _||_ age_cat | ['is_recid']
+age_cat _||_ is_recid | ['race', 'sex']
+sex _||_ is_recid | ['race', 'age_cat']
+sex _||_ age_cat | ['race', 'is_recid']
+
+ All categories of race
+
+d=0.03
+sex _||_ age_cat | []
+
+d = 0.035
+sex _||_ age_cat | []
+sex _||_ age_cat | ['priors_count']
+sex _||_ age_cat | ['is_recid']
+
+d=0.05
+sex _||_ age_cat | []
+sex _||_ is_recid | []
+sex _||_ age_cat | ['priors_count']
+sex _||_ age_cat | ['is_recid']
+
+d=0.07
+race _||_ sex | []
+sex _||_ age_cat | []
+sex _||_ is_recid | []
+age_cat _||_ is_recid | []
+age_cat _||_ is_recid | ['sex']
+sex _||_ age_cat | ['priors_count']
+sex _||_ age_cat | ['is_recid']
+
+d=0.1
+race _||_ sex | []
+race _||_ is_recid | []
+sex _||_ age_cat | []
+sex _||_ is_recid | []
+age_cat _||_ is_recid | []
+race _||_ is_recid | ['sex']
+age_cat _||_ is_recid | ['sex']
+sex _||_ is_recid | ['age_cat']
+race _||_ is_recid | ['priors_count']
+sex _||_ age_cat | ['priors_count']
+sex _||_ is_recid | ['priors_count']
+sex _||_ age_cat | ['is_recid']
+
+Using only African American vs Caucasian data
+
+d=0.03
+sex _||_ age_cat | []
+
+d=0.035
+sex _||_ age_cat | []
+sex _||_ age_cat | ['priors_count']
+sex _||_ age_cat | ['is_recid']
+
+d=0.05
+sex _||_ age_cat | []
+sex _||_ is_recid | []
+sex _||_ age_cat | ['priors_count']
+sex _||_ age_cat | ['is_recid']
+
+d=0.07
+race _||_ sex | []
+sex _||_ age_cat | []
+sex _||_ is_recid | []
+age_cat _||_ is_recid | []
+age_cat _||_ is_recid | ['sex']
+sex _||_ age_cat | ['priors_count']
+sex _||_ age_cat | ['is_recid']
+
+d=0.08
+race _||_ sex | []
+race _||_ is_recid | []
+sex _||_ age_cat | []
+sex _||_ is_recid | []
+age_cat _||_ is_recid | []
+age_cat _||_ is_recid | ['sex']
+sex _||_ age_cat | ['priors_count']
+sex _||_ age_cat | ['is_recid']
+
+d=0.1
+race _||_ sex | []
+race _||_ is_recid | []
+sex _||_ age_cat | []
+sex _||_ is_recid | []
+age_cat _||_ is_recid | []
+race _||_ is_recid | ['sex']
+age_cat _||_ is_recid | ['sex']
+sex _||_ is_recid | ['age_cat']
+race _||_ is_recid | ['priors_count']
+sex _||_ age_cat | ['priors_count']
+sex _||_ is_recid | ['priors_count']
+sex _||_ age_cat | ['is_recid']
+
+d=0.02
+sex _||_ age_cat | []
+
+d=0.025
+sex _||_ age_cat | []
+
+d=0.015
+sex _||_ age_cat | []

@@ -1,0 +1,18 @@
+{
+  "dataset": "GermanDataset",
+  "non_numeric_attributes": [
+    "credit_history",
+    "present_employment",
+    "savings"
+  ],
+  "sensitive_attributes": [
+    "age_factor",
+    "status"
+  ],
+  "numeric_attributes": {},
+  "date_attributes": {},
+  "ground_truth": "credit",
+  "predictions": "credit",
+  "_comment": []
+}
+
